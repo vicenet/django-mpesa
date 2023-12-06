@@ -33,10 +33,7 @@ It's crucial to understand that styling the UI is pivotal because it:
 ### Steps Ahead
 
 1. **Design Phase**: Let's focus on incorporating UI/UX elements into the project roadmap.
-2. **Collaboration**: Working closely with designers and front-end developers to implement styling.
-3. **Community Feedback**: We encourage everyone to share thoughts and suggestions on improving the UI.
 
-## Conclusion
 
 Styling our UI is essential to create an engaging and visually appealing experience. Your involvement and feedback are valuable as we move towards enhancing the project's user interface.
 
