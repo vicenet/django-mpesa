@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main><form method="post" action="{% url 'transaction_status' %}">
+  {% csrf_token %}
+  <label for="transaction_id">Transaction ID:</label>
+  <input type="text" name="transaction_id" required>
+  <br>
+  <input type="submit" value="Check Status">
+</form>
+</main>
+    <footer></footer>
+  </body>
+</html>

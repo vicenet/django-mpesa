@@ -1,0 +1,22 @@
+{%extends 'intergration/main.html'%}
+
+
+{%block content%}
+    <form method="post" action="{% url 'b2c' %}">
+  {% csrf_token %}
+  <label for="amount">Amount:</label>
+  <input type="number" name="amount" required>
+  <br>
+  <label for="phone_number">Phone Number:</label>
+  <input type="text" name="phone_number" required>
+  <br>
+  <label for="remarks">Remarks:</label>
+  <input type="text" name="remarks" required>
+  <br>
+  <label for="occasion">Occasion:</label>
+  <input type="text" name="occasion" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+{%endblock}

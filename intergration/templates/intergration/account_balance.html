@@ -1,0 +1,12 @@
+{%extends 'intergration/main.html'%}
+
+{%load static%}
+
+{%block section%}
+
+    <form method="post" action="{% url 'account_balance' %}">
+      {% csrf_token %}
+      <input type="submit" value="Check Balance">
+    </form>
+{%endblock%}
+

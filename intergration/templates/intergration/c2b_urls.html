@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main><form method="post" action="{% url 'c2b_register_urls' %}">
+  {% csrf_token %}
+  <input type="submit" value="Register URLs">
+</form>
+</main>
+    <footer></footer>
+  </body>
+</html>

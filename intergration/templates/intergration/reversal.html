@@ -1,0 +1,20 @@
+<html>
+<form method="post" action="{% url 'reversal' %}">
+  {% csrf_token %}
+  <label for="transaction_id">Transaction ID:</label>
+  <input type="text" name="transaction_id" required>
+  <br>
+  <label for="amount">Amount:</label>
+  <input type="number" name="amount" required>
+  <br>
+  <label for="remarks">Remarks:</label>
+  <input type="text" name="remarks" required>
+  <br>
+  <label for="occasion">Occasion:</label>
+  <input type="text" name="occasion" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</html>

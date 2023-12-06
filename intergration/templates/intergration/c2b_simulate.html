@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main><form method="post" action="{% url 'c2b_simulate' %}">
+  {% csrf_token %}
+  <label for="amount">Amount:</label>
+  <input type="number" name="amount" required>
+  <br>
+  <label for="phone_number">Phone Number:</label>
+  <input type="text" name="phone_number" required>
+  <br>
+  <label for="bill_reference">Bill Reference:</label>
+  <input type="text" name="bill_reference" required>
+  <br>
+  <input type="submit" value="Simulate Transaction">
+</form>
+</main>
+    <footer></footer>
+  </body>
+</html>

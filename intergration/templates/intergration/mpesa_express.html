@@ -1,0 +1,18 @@
+
+<form method="post" action="{% url 'mpesa_express' %}">
+  {% csrf_token %}
+  <label for="amount">Amount:</label>
+  <input type="number" name="amount" required>
+  <br>
+  <label for="phone_number">Phone Number:</label>
+  <input type="text" name="phone_number" required>
+  <br>
+  <label for="account_reference">Account Reference:</label>
+  <input type="text" name="account_reference" required>
+  <br>
+  <label for="transaction_description">Transaction Description:</label>
+  <input type="text" name="transaction_description" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
