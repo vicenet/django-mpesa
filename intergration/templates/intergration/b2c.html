@@ -1,22 +1,20 @@
-{%extends 'intergration/main.html'%}
+{% extends "intergration/main.html" %}
 
+{% block content %}
 
-{%block content%}
+<div class="card">
+  
+  <div class="card-body">
+    <h4 class="card-title">B2C </h4>
     <form method="post" action="{% url 'b2c' %}">
-  {% csrf_token %}
-  <label for="amount">Amount:</label>
-  <input type="number" name="amount" required>
-  <br>
-  <label for="phone_number">Phone Number:</label>
-  <input type="text" name="phone_number" required>
-  <br>
-  <label for="remarks">Remarks:</label>
-  <input type="text" name="remarks" required>
-  <br>
-  <label for="occasion">Occasion:</label>
-  <input type="text" name="occasion" required>
-  <br>
-  <input type="submit" value="Submit">
-</form>
+      {% csrf_token %}
+      {{form}}
+    </br>
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+  </div>
+</div>
 
-{%endblock}
+
+</br>
+{% endblock content%}
